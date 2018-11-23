@@ -9,3 +9,5 @@ class Neighbourhood(models.Model):
     occupant_count=models.IntegerField()
     admin = models.ForeignKey(User,null=True,on_delete=models.CASCADE)
 
+   
+       
