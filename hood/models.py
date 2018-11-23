@@ -10,4 +10,32 @@ class Neighbourhood(models.Model):
     admin = models.ForeignKey(User,null=True,on_delete=models.CASCADE)
 
    
-       
+
+class User_Profile(models.Model):
+    name = models.CharField(max_length=30)
+    neighbourhood = models.ForeignKey(Neighbourhood,null = True,on_delete=models.CASCADE)
+    email = models.EmailField()
+    user_id = models.ForeignKey(User,null=True)
+    profile_photo = models.ImageField(upload_to = 'gallary',blank=True,null=True)
+
+
+
+class Business(models.Model):
+    name = models.CharField(max_length=40)
+    user = models.ForeignKey(User,null = True,on_delete=models.CASCADE)
+    neighbourhood = models.ForeignKey(Neighbourhood,on_delete=models.CASCADE)
+    email = models.EmailField()
+    description = models.CharField(max_length=90)
+
+
+
+class Post(models.Model):
+    image = models.ImageField(upload_to='gallary/',blank=True,null= True)
+    image_caption = models.TextField(max_length=200)
+    profile = models.ForeignKey(User_Profile,null= True,blank= True)
+    postdate = models.DateTimeField(auto_now_add=True,null=True)
+    user = models.ForeignKey(User,null=True)
+
+
+    class Meta:
+        ordering=['-postdate']
