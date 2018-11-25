@@ -16,7 +16,6 @@ class NeigbourhoodTestClass(TestCase):
 class BusinessTestClass(TestCase):
     #Set up method
     def setUp(self):
-      
         self.new_business =Business()
 
     # Testing  instance
