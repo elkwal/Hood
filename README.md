@@ -1,5 +1,4 @@
-# App Name
-Hood
+# HOOD
 
 # Built by Sylvia Elukwal
 
