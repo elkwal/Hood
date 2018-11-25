@@ -20,6 +20,7 @@ class BusinessTestClass(TestCase):
 
     # Testing  instance
     def test_instance(self):
+      
         self.assertTrue(isinstance(self.new_business,Business))
 
     #Testing Save Method
