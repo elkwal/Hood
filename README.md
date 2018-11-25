@@ -11,7 +11,7 @@ Neighbourhood is a community policing app that help people in every estate to li
 * Django 2.1.3
 
 ## Installation steps 
-* $ git clone https://github.com/PatrickNgare/NyumbaKumi
+* $ git clone https://github.com/elkwal/Hood.git
 * $ cd Hood
 * $ source virtual/bin/activate
 * $ python3.6 manage.py runserver  
