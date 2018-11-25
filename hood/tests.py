@@ -2,7 +2,6 @@ from django.test import TestCase
 from .models import Neigbourhood,Business
 
 # Create your tests here.
-
 class NeigbourhoodTestClass(TestCase):
     #Set up method
     def setUp(self):
