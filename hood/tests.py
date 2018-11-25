@@ -8,7 +8,6 @@ from .models import Neigbourhood,Business
 
 class NeigbourhoodTestClass(TestCase):
     #Set up method
-    
     def setUp(self):
         self.new_Neigbourhood =Neigbourhood()
 
