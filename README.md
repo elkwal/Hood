@@ -1,6 +1,7 @@
 # HOOD
 
-# Built by Sylvia Elukwal
+# Built by 
+Sylvia Elukwal
 
 # DESCRIPTION
 Neighbourhood is a community policing app that help people in every estate to live friendly and upto date with things concerning the neighbourhoods.
